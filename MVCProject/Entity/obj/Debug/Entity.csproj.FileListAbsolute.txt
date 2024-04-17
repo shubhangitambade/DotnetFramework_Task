@@ -1,0 +1,6 @@
+C:\Dotnet_Shubh\MVC_usingVisualStudio\MVCProject\Entity\bin\Debug\Entity.dll
+C:\Dotnet_Shubh\MVC_usingVisualStudio\MVCProject\Entity\bin\Debug\Entity.pdb
+C:\Dotnet_Shubh\MVC_usingVisualStudio\MVCProject\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+C:\Dotnet_Shubh\MVC_usingVisualStudio\MVCProject\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Dotnet_Shubh\MVC_usingVisualStudio\MVCProject\Entity\obj\Debug\Entity.dll
+C:\Dotnet_Shubh\MVC_usingVisualStudio\MVCProject\Entity\obj\Debug\Entity.pdb

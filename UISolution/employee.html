@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>WEB API</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Employees</h2>
+      
+        <table class="table">
+                <thead>
+                <tr>
+                <th>Id</th><nbsp> <nbsp>
+                <th>First Name</th><nbsp><nbsp>
+                <th>Last Name </th><nbsp><nbsp>
+                <th>Email</th><nbsp><nbsp>
+                <th>Contact No</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+        </table>
+        </div>
+
+
+        <script>
+            
+        var employeeUrl = "http://localhost:51675/api/employee/GetAll"
+        var employees = [];
+        
+        $(document).ready(function () {
+
+            $.ajax({
+                url: employeeUrl,
+                type: 'GET',
+                contentType: 'application/xml',
+
+                success: function (response) {
+                    employees = response;
+                    console.log(employees);
+    
+                    /*for (var i = 0; i < employees.length; i++) {
+                        lstSubject.append($('<option></option>').val(employees[i].Id).html(employees[i].FirstName));
+
+                    }*/
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+
+        </script>
+
+</body>
+</html>
